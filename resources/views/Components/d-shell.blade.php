@@ -6,50 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Fresh2Go</title>
-
+    
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    
     <style>
-        #main {
-            display: grid;
-            height: 100vh;
-            grid-template-rows: 1fr 5fr;
-        }
 
-        #nav {
-            background-color: red;
-            display: grid;
-            padding: 10px;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-        }
-
-
-        #body {
-            background-color: aqua;
-        }
-
-        #quick-links {
-            background-color: darkmagenta;
-        }
-
-        #logo {
-            background-color:green;
-        }
-
-        #search {
-            background-color:brown;
-        }
-
-        #tool-kit {
-            background-color:darksalmon;
-        }
-
-        #menu {
-            background-color:lightskyblue;
-        }
-
-        #filters {
-            background-color:ivory;
-        }
     </style>
 
 
@@ -69,6 +30,6 @@
         <div id="body"> {{$slot}} </div>
     </div>
     
-
+<img src="https://cdn.statically.io/img/statically.dev/h=100/dog.jpg"></img>
 </body>
 </html>

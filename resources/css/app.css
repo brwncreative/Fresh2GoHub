@@ -1,0 +1,42 @@
+#main {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 5fr;
+}
+
+#nav {
+    background-color: red;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+
+#body {
+    background-color: aqua;
+}
+
+#quick-links {
+    background-color: darkmagenta;
+}
+
+#logo {
+    background-color:green;
+}
+
+#search {
+    background-color:brown;
+}
+
+#tool-kit {
+    background-color:darksalmon;
+}
+
+#menu {
+    background-color:lightskyblue;
+}
+
+#filters {
+    background-color:ivory;
+}
