@@ -1,0 +1,99 @@
+#hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20rem;
+    border-radius: 30px;
+    background-color: green;
+}
+
+#c-inner {
+    position: relative;
+    height: 95%;
+    width: 90%;
+}
+
+#c-content {
+    overflow: hidden;
+    max-height: 19rem;
+}
+
+#c-content > #cc-title {
+    color: white;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-block: 1rem;
+}
+
+#c-content > p {
+    color: white;
+    font-size: 1rem;
+}
+
+#c-controls {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+#c-input-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 1em;
+    height: 3.24rem;
+    width: 100%;
+}
+
+#c-input {
+    margin-left: 10px;
+    height: 2.24rem;
+    width: 95%;
+    font-size: 1rem;
+    border: none;
+}
+
+#c-input:focus {
+    outline: none;
+}
+
+#c-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 3rem;
+    border-radius: 1em;
+    border: none;
+    font-size: 1rem;
+    color: black;
+    background-color: greenyellow;
+}
+
+.section {
+    margin-block: 1.2rem;
+}
+
+#ft-products {
+    min-width: 90%;
+    height: fit-content;
+}
+
+#ft-p-wrapper{
+    min-width: inherit;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
+}
+
+

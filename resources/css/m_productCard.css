@@ -1,0 +1,73 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 0.2rem;
+    margin-block-end: 1rem;
+    width: 8rem;
+    height: 12rem;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+.crd-layout {
+    display: grid;
+    grid-template: 5rem 1rem 3rem 2rem 2em / 8.2rem;
+    grid-template-areas: "image" "tags" "name" "options" "controls";
+}
+
+.crd-image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crd-image > img {
+    width: 7rem;
+    height: auto;
+}
+
+.crd-tags {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    grid-area: tags;
+    display: flex;
+    align-items: center;
+}
+
+.crd-tags > div {
+    margin-right: 0.5rem;
+}
+.crd-item_name {
+    grid-area: name;
+    display: flex;
+    font-size: 1.3rem;
+}
+.crd-options {
+    grid-area: options;
+    display: flex;
+    align-items: center;
+}
+
+.crd-options > select {
+    height: 70%;
+    width: 100%;
+}
+
+.crd-controls {
+    grid-area: controls;
+    display: flex;
+    align-items: center;
+}
+
+.crd-controls > .price {
+}
+
+.crd-controls > .buttons {
+    color: green;
+    font-size: 1.8rem;
+    margin-left: auto;
+}

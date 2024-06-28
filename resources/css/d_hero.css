@@ -1,0 +1,112 @@
+#hero-wrapper {
+    display: grid;
+    grid-template: 35rem / 55% 45%;
+}
+
+#c-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 30rem;
+    border-radius: 30px;
+    background-color: green;
+}
+
+#c-inner {
+    position: relative;
+    height: 95%;
+    width: 90%;
+}
+
+#c-content{
+    overflow: hidden;
+    max-height: 19rem;
+}
+
+#c-content > #cc-title {
+    color: white;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+#c-content > p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#c-controls {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+#c-input-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 1em;
+    height: 3.24rem;
+    width: 100%;
+}
+
+#c-input {
+    margin-left: 10px;
+    height: 2.24rem;
+    width: 95%;
+    border: none;
+}
+
+#c-input:focus {
+    outline: none;
+}
+
+#c-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 3rem;
+    border-radius: 1em;
+    border: none;
+    background-color: greenyellow;
+}
+
+#ft-products {
+
+    display: flex;
+    align-items: center;
+}
+
+#ft-pds-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: min(40rem);
+}
+
+@media only screen and (max-width: 1500px) {
+    #ft-products{
+        overflow-x: scroll;
+    }
+
+    #ft-products::-webkit-scrollbar {
+
+        height: 10px;
+        width: 12px;
+    }
+    
+    #ft-products::-webkit-scrollbar-track {
+        border-radius: 30px;
+        margin-block: 0.8rem;
+    }
+    
+    #ft-products::-webkit-scrollbar-thumb {
+        background: lightgrey;
+        border-radius: 30px;
+        border: 2px solid white;
+    }
+
+}
